@@ -1,0 +1,92 @@
+.site-hero {
+  background-color: $bg;
+  //   padding-top: 100px;
+}
+
+.hero__inner {
+  @include d-flex(space-around, 18px);
+}
+
+.hero__subtitle {
+  max-width: 412px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.36em;
+  text-decoration-skip-ink: none;
+  color: #696969;
+  margin-bottom: 28px;
+}
+
+.hero__title {
+  color: $text;
+  max-width: 478px;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 69px;
+  text-decoration-skip-ink: none;
+  margin-bottom: 28px;
+}
+
+.hero__text {
+  color: $text;
+  max-width: 529px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration-skip-ink: none;
+  margin-bottom: 28px;
+}
+
+.hero__buy-button {
+  background-color: $main-color;
+  color: $text;
+  max-width: 203px;
+  padding: 14px 40px;
+  border-radius: 220px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration-skip-ink: none;
+  margin-bottom: 28px;
+}
+
+.hero__watch-now {
+  max-width: 337px;
+  //   max-height: 122px;
+  margin-top: 28px;
+  background-image: url(/images/watchImg.png);
+  padding: 50px 20px;
+  background-repeat: no-repeat;
+}
+
+.watch-now__text {
+  color: $text;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.36em;
+  text-decoration-skip-ink: none;
+}
+
+.watch-now__name {
+  color: $text;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration-skip-ink: none;
+}
+
+.hero-right__img {
+  max-width: max-content;
+}
+
+@media screen and (max-width: 700px) {
+  .hero__inner {
+    display: inline-block;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+}
